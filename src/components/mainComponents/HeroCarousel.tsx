@@ -2,7 +2,11 @@
 
 import { Carousel } from "flowbite-react";
 
-export function Component() {
+import React from "react";
+
+type Props = {};
+
+const HeroCarousel = (props: Props) => {
   return (
     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
       <Carousel pauseOnHover>
@@ -29,4 +33,6 @@ export function Component() {
       </Carousel>
     </div>
   );
-}
+};
+
+export default HeroCarousel;
