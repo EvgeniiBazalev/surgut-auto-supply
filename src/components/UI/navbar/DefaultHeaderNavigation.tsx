@@ -8,13 +8,13 @@ const DefaultHeaderNavigation: FC = function () {
   return (
     <header>
       <Navbar fluid>
-        <Navbar.Brand href="https://flowbite.com">
+        <Navbar.Brand href="/">
           <Image
-            src="https://flowbite.com/docs/images/logo.svg"
+            src="logo.svg"
             className="mr-3 h-6 sm:h-9"
             alt="Logo"
-            width={50}
-            height={50}
+            width={100}
+            height={100}
           />
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
             Surgut Auto Supply
@@ -40,13 +40,12 @@ const DefaultHeaderNavigation: FC = function () {
           className="lg:order-1"
         >
           <Navbar.Link active href="#" className="rounded-lg">
-            Home
+            Главная
           </Navbar.Link>
-          <Navbar.Link href="#">Company</Navbar.Link>
-          <Navbar.Link href="#">Marketplace</Navbar.Link>
-          <Navbar.Link href="#">Features</Navbar.Link>
-          <Navbar.Link href="#">Team</Navbar.Link>
-          <Navbar.Link href="#">Contact</Navbar.Link>
+
+          <Navbar.Link href="#">Каталог</Navbar.Link>
+          <Navbar.Link href="#">О нас</Navbar.Link>
+          <Navbar.Link href="#">Контакты</Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
     </header>
