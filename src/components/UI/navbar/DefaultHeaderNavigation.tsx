@@ -2,23 +2,26 @@
 
 import { Button, Navbar } from "flowbite-react";
 import type { FC } from "react";
+import Image from "next/image";
 
 const DefaultHeaderNavigation: FC = function () {
   return (
     <header>
       <Navbar fluid>
         <Navbar.Brand href="https://flowbite.com">
-          <img
+          <Image
             src="https://flowbite.com/docs/images/logo.svg"
             className="mr-3 h-6 sm:h-9"
-            alt="Flowbite Logo"
+            alt="Logo"
+            width={50}
+            height={50}
           />
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            Flowbite
+            Surgut Auto Supply
           </span>
         </Navbar.Brand>
         <div className="flex items-center gap-3 lg:order-2">
-          <Button
+          {/* <Button
             color="gray"
             href="#"
             className="border-0 hover:bg-gray-50 focus:ring-gray-300 dark:text-white dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
@@ -27,7 +30,7 @@ const DefaultHeaderNavigation: FC = function () {
           </Button>
           <Button color="info" href="#">
             Get started
-          </Button>
+          </Button> */}
           <Navbar.Toggle theme={{ icon: "h-5 w-5 shrink-0" }} />
         </div>
         <Navbar.Collapse
