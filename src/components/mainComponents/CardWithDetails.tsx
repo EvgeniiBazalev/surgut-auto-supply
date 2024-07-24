@@ -1,44 +1,66 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
+import Image from "next/image";
+
 const products = [
   {
     id: 1,
-    name: "Basic Tee 8-Pack",
+    name: "Колодки тормозные",
     href: "#",
-    price: "$256",
-    description:
-      "Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.",
-    options: "8 colors",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg",
-    imageAlt:
-      "Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.",
+    price: "₽3 000",
+    description: "Колодки передние на honda civic",
+    options: "2 цвета",
+    imageSrc: "/Cards/1.jpg",
+    imageAlt: "Колодки на honda civic",
   },
   {
     id: 2,
-    name: "Basic Tee",
+    name: "Колодки тормозные",
     href: "#",
-    price: "$32",
-    description:
-      "Look like a visionary CEO and wear the same black t-shirt every day.",
-    options: "Black",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-02.jpg",
-    imageAlt: "Front of plain black t-shirt.",
+    price: "₽3 000",
+    description: "Колодки передние на honda civic",
+    options: "2 цвета",
+    imageSrc: "/Cards/1.jpg",
+    imageAlt: "Колодки на honda civic",
   },
-  // More products...
+  {
+    id: 3,
+    name: "Колодки тормозные",
+    href: "#",
+    price: "₽3 000",
+    description: "Колодки передние на honda civic",
+    options: "2 цвета",
+    imageSrc: "/Cards/1.jpg",
+    imageAlt: "Колодки на honda civic",
+  },
+  {
+    id: 4,
+    name: "Колодки тормозные",
+    href: "#",
+    price: "₽3 000",
+    description: "Колодки передние на honda civic",
+    options: "2 цвета",
+    imageSrc: "/Cards/1.jpg",
+    imageAlt: "Колодки на honda civic",
+  },
+  {
+    id: 5,
+    name: "Колодки тормозные",
+    href: "#",
+    price: "₽3 000",
+    description: "Колодки передние на honda civic",
+    options: "2 цвета",
+    imageSrc: "/Cards/1.jpg",
+    imageAlt: "Колодки на honda civic",
+  },
+  {
+    id: 6,
+    name: "Колодки тормозные",
+    href: "#",
+    price: "₽3 000",
+    description: "Колодки передние на honda civic",
+    options: "2 цвета",
+    imageSrc: "/Cards/1.jpg",
+    imageAlt: "Колодки на honda civic",
+  },
 ];
 
 export default function CardWithDetails() {
@@ -54,9 +76,11 @@ export default function CardWithDetails() {
               className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
             >
               <div className="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96">
-                <img
+                <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
+                  width={500}
+                  height={500}
                   className="h-full w-full object-cover object-center sm:h-full sm:w-full"
                 />
               </div>
