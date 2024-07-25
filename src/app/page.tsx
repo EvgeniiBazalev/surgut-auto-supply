@@ -1,13 +1,5 @@
-import CardWithDetails from "@/components/mainComponents/CardWithDetails";
-import HeroCarousel from "@/components/mainComponents/HeroCarousel";
+import LandingPage from "@/components/mainComponents/LandingPage";
 
 export default function Home() {
-  return (
-    <div>
-      <HeroCarousel />
-
-      <CardWithDetails />
-      <div>start</div>
-    </div>
-  );
+  return <LandingPage />;
 }
