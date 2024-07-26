@@ -281,19 +281,25 @@ export default function LandingPage() {
               <form className="hidden lg:block lg:flex-1">
                 <div className="flex">
                   <label htmlFor="desktop-currency" className="sr-only">
-                    {/* Currency */}
+                    Currency
                   </label>
-                  <div className="group relative -ml-2 rounded-md border-transparent bg-gray-900 focus-within:ring-2 focus-within:ring-white">
+                  <div className="relative -ml-2 rounded-md border-transparent bg-gray-900 focus-within:ring-2 focus-within:ring-white">
                     <select
                       id="desktop-currency"
                       name="currency"
-                      className="flex items-center rounded-md border-transparent bg-gray-900 bg-none py-0.5 pl-2 pr-5 text-sm font-medium text-white focus:border-transparent focus:outline-none focus:ring-0 group-hover:text-gray-100"
+                      className="block w-full bg-gray-900 border border-transparent text-white py-2 pl-3 pr-10 rounded-md leading-tight focus:outline-none focus:bg-gray-900 focus:border-transparent focus:ring-0"
+                      style={{
+                        appearance: "none",
+                        WebkitAppearance: "none",
+                        MozAppearance: "none",
+                        backgroundImage: "none",
+                      }}
                     >
                       {currencies.map((currency) => (
                         <option key={currency}>{currency}</option>
                       ))}
                     </select>
-                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                       <ChevronDownIcon
                         className="h-5 w-5 text-gray-300"
                         aria-hidden="true"
@@ -1065,7 +1071,7 @@ export default function LandingPage() {
                   className="flex items-center text-gray-500 hover:text-gray-600"
                 >
                   <img
-                    src="https://tailwindui.com/img/flags/flag-canada.svg"
+                    src="https://tailwindui.com/img/flags/flag-russia.svg"
                     alt=""
                     className="h-auto w-5 flex-shrink-0"
                   />
