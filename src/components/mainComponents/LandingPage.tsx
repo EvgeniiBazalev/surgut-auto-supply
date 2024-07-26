@@ -223,18 +223,20 @@ export default function LandingPage() {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <div className="flow-root">
                     <a
-                      href="#"
+                      href="tel:+79222123456"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
-                      Create an account
+                      +7 9 222 12 34 56
                     </a>
                   </div>
                   <div className="flow-root">
                     <a
-                      href="#"
+                      href="https://2gis.ru/surgut/geo/5489397701037240/73.473933%2C61.232941?m=73.474222%2C61.232991%2F17.49"
                       className="-m-2 block p-2 font-medium text-gray-900"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      Sign in
+                      Где нас найти
                     </a>
                   </div>
                 </div>
@@ -244,7 +246,7 @@ export default function LandingPage() {
                   <form>
                     <div className="inline-block">
                       <label htmlFor="mobile-currency" className="sr-only">
-                        Currency
+                        Валюта
                       </label>
                       <div className="group relative -ml-2 rounded-md border-transparent focus-within:ring-2 focus-within:ring-white">
                         <select
@@ -281,7 +283,7 @@ export default function LandingPage() {
               <form className="hidden lg:block lg:flex-1">
                 <div className="flex">
                   <label htmlFor="desktop-currency" className="sr-only">
-                    Currency
+                    Валюта
                   </label>
                   <div className="relative -ml-2 rounded-md border-transparent bg-gray-900 focus-within:ring-2 focus-within:ring-white">
                     <select
@@ -315,17 +317,19 @@ export default function LandingPage() {
 
               <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                 <a
-                  href="#"
-                  className="text-sm font-medium text-white hover:text-gray-100"
+                  href="https://2gis.ru/surgut/geo/5489397701037240/73.473933%2C61.232941?m=73.474222%2C61.232991%2F17.49"
+                  className="-m-2 block p-2 font-medium text-gray-900"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Create an account
+                  Где нас найти
                 </a>
                 <span className="h-6 w-px bg-gray-600" aria-hidden="true" />
                 <a
-                  href="#"
-                  className="text-sm font-medium text-white hover:text-gray-100"
+                  href="tel:+79222123456"
+                  className="-m-2 block p-2 font-medium text-gray-900"
                 >
-                  Sign in
+                  +7 9 222 12 34 56
                 </a>
               </div>
             </div>
@@ -1075,8 +1079,8 @@ export default function LandingPage() {
                     alt=""
                     className="h-auto w-5 flex-shrink-0"
                   />
-                  <span className="ml-3 text-sm">Change</span>
-                  <span className="sr-only">location and currency</span>
+                  <span className="ml-3 text-sm">Изменить</span>
+                  <span className="sr-only">Местоположение и валюта</span>
                 </a>
               </div>
             </div>
