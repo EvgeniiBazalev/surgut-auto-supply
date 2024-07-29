@@ -1,10 +1,12 @@
 import LandingPage from "@/components/mainComponents/LandingPage";
+import CardWithDetails from "@/components/mainComponents/supportedComponents/CardWithDetails";
+import HeroCarousel from "@/components/mainComponents/supportedComponents/HeroCarousel";
 
 export default function Home() {
   return (
-    <div>
-      start<div>start</div>
-      <div>start</div>
-    </div>
+    <>
+      <HeroCarousel />
+      <CardWithDetails />
+    </>
   );
 }
