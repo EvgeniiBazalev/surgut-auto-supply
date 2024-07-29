@@ -16,7 +16,7 @@ export function DefaultHeaderNavigation() {
           height={50}
         />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Surgut Auto Supply
+          Avtosklad86
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
